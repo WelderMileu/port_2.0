@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+	--color-black-clear: #1B1E1F;
+	--color-black-max-clear: #1F2223;
+	--color-blue-clear: #68E1FD;
+	--color-blue: #24A2D5;
+	--color-yellow: #F2B138;
+	--color-red: #DE0A0A;	
+	--color-blue-vanage: #2C6A7E;
+	--color-green: #40da3d;
+	--color-white: #ffffff;
+}
+
+*,
+html,
+#root {
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	font-weight: 100;
+	background-color: var(--color-black-clear);
+	color: var(--color-white);
+}
+
+/* Sobre mim */
+
+.abaut
+.card_abaut 
+.card_description {
+	width: 276px;
+	height: 343px;
+	border-radius: 50px;
+	background-color: var(--color-black-max-clear);
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.abaut
+.card_abaut
+.card_description img {
+	width: 150px;
+	height: 150px;
+	border-radius: 100px;
+	object-fit: cover;
+}
+
+.abaut
+.card_abaut
+.card_description h1 {
+	font-size: 24px;
+	font-weight: 900;
+	padding-top: 15px;
+}
+
+.abaut
+.card_abaut
+.card_description span {
+	font-size: 18px;
+	font-weight: 300;
+}
+
+/* redes sociais */
+
+.abaut
+.card_abaut
+.sociais {
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+	margin-left: 27px;
+}
+
+.abaut
+.card_abaut
+.sociais
+.box {
+	width: 60px;
+	height: 60px;
+	border-radius: 10px;
+	background-color: var(--color-black-max-clear);
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-left: 10px;
+}
+
+.abaut
+.card_abaut
+.sociais
+.box i {
+	font-size: 2rem;
+	color: var(--color-blue-clear);
+}
+
+/* Minhas skills */
+.lenguages {
+	margin-top: 100px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.lenguages 
+.card {
+	width: 459px;
+	height: 140px;
+	border-radius: 20px;
+	padding: 20px;
+
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	margin: 10px;
+
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lenguages 
+.card
+.card_icon {
+	width: 65px;
+	height: 65px;
+	border: 3px solid var(--color-yellow);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100px;
+	margin-bottom: 18px;
+}
+
+.lenguages 
+.card
+.card_icon i {
+	font-size: 2.5rem;
+	color: var(--color-yellow);
+}
+
+.lenguages 
+.card
+.card_info {
+	margin-left: 20px;
+}
+
+.lenguages 
+.card
+.card_info
+.card_name {
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.lenguages 
+.card
+.card_info
+.porcent {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.lenguages 
+.card
+.card_info
+.porcent
+.porcent_value {
+	font-weight: 400;
+	font-size: 24px;
+	padding-left: 10px;
+}
+
+.lenguages 
+.card
+.card_info
+.porcent
+.porcent_bar {
+	width: 270px;
+	height: 19px;
+	background-color: var(--color-black-max-clear);
+	border-radius: 100px;
+}
+
+.lenguages 
+.card
+.card_info
+.porcent
+.porcent_bar 
+.porcent_progress {
+	width: 150px;
+	height: 19px;
+	background-color: var(--color-yellow);
+	border-radius: 100px;
+}
+
+@media screen and (max-width: 500px) {
+	/* Sobre mim */
+	.abaut {
+		margin-top: 20px;
+		display: flex;
+		justify-content: center;
+	}
+
+	/* Minhas skills  */
+	.container 
+	.lenguages {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.lenguages 
+	.card {
+		width: 300px !important;
+		height: 100px;
+	}
+
+	.lenguages 
+	.card
+	.card_icon {
+		width: 50px;
+		height: 50px;
+
+		margin-bottom: 10px;
+	}
+
+	.lenguages 
+	.card
+	.card_icon i {
+		font-size: 1.5rem;
+	}
+
+	.lenguages 
+	.card
+	.card_info
+	.card_name {
+		font-size: 18px;
+	}
+
+	.lenguages 
+	.card
+	.card_info
+	.porcent
+	.porcent_value {
+		font-size: 18px;
+	}
+
+	.lenguages 
+	.card
+	.card_info
+	.porcent
+	.porcent_bar {
+		width: 140px;
+		height: 10px;
+	}
+
+	.lenguages 
+	.card
+	.card_info
+	.porcent
+	.porcent_bar 
+	.porcent_progress {
+		width: 70px;
+		height: 10px;
+	}
+}
