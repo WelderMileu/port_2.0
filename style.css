@@ -29,6 +29,56 @@ body {
 }
 
 /* Sobre mim */
+.abaut {
+	margin: auto 15%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.abaut
+.abaut_description {
+	width: 500px;
+}
+
+.abaut
+.abaut_description h2 {
+	font-size: 2.5rem;
+}
+
+.abaut
+.abaut_description p {
+	width: 400px;
+	font-size: 1.2rem;
+	font-weight: 300;
+}
+
+.btn-primary {
+	margin-top: 20px;
+	width: 200px;
+	height: 60px;
+	border: none;
+	border: 2px solid var(--color-blue-clear);
+	padding: 10px;
+	border-radius: 10px;
+	background-color: transparent;
+
+	color: var(--color-blue-clear);
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+.abaut
+.card_abaut {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	margin-top: 30px;
+}
 
 .abaut
 .card_abaut 
@@ -78,7 +128,6 @@ body {
 	display: flex;
 	flex-direction: row;
 	margin-top: 20px;
-	margin-left: 27px;
 }
 
 .abaut
@@ -112,12 +161,15 @@ body {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+
+	justify-content: center;
+	align-items: center;
 }
 
 .lenguages 
 .card {
-	width: 459px;
-	height: 140px;
+	width: 300px;
+	height: 100px;
 	border-radius: 20px;
 	padding: 20px;
 
@@ -132,21 +184,21 @@ body {
 .lenguages 
 .card
 .card_icon {
-	width: 65px;
-	height: 65px;
+	width: 50px;
+	height: 50px;
+	margin-bottom: 10px;
 	border: 3px solid var(--color-yellow);
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border-radius: 100px;
-	margin-bottom: 18px;
 }
 
 .lenguages 
 .card
 .card_icon i {
-	font-size: 2.5rem;
+	font-size: 1.5rem;
 	color: var(--color-yellow);
 }
 
@@ -160,7 +212,7 @@ body {
 .card
 .card_info
 .card_name {
-	font-size: 24px;
+	font-size: 18px;
 	font-weight: 400;
 }
 
@@ -178,8 +230,8 @@ body {
 .card_info
 .porcent
 .porcent_value {
+	font-size: 18px;
 	font-weight: 400;
-	font-size: 24px;
 	padding-left: 10px;
 }
 
@@ -188,8 +240,8 @@ body {
 .card_info
 .porcent
 .porcent_bar {
-	width: 270px;
-	height: 19px;
+	width: 140px;
+	height: 10px;
 	background-color: var(--color-black-max-clear);
 	border-radius: 100px;
 }
@@ -200,80 +252,30 @@ body {
 .porcent
 .porcent_bar 
 .porcent_progress {
-	width: 150px;
-	height: 19px;
+	width: 70px;
+	height: 10px;
 	background-color: var(--color-yellow);
 	border-radius: 100px;
 }
 
 @media screen and (max-width: 500px) {
-	/* Sobre mim */
 	.abaut {
-		margin-top: 20px;
-		display: flex;
-		justify-content: center;
+		flex-direction: column;
 	}
 
-	/* Minhas skills  */
-	.container 
-	.lenguages {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+	.abaut 
+	.abaut_description {
+		margin-top: 50px;
+		width: 100%
 	}
 
-	.lenguages 
-	.card {
-		width: 300px !important;
-		height: 100px;
+	.abaut 
+	.abaut_description h2 {
+		font-size: 2rem;
 	}
 
-	.lenguages 
-	.card
-	.card_icon {
-		width: 50px;
-		height: 50px;
-
-		margin-bottom: 10px;
-	}
-
-	.lenguages 
-	.card
-	.card_icon i {
-		font-size: 1.5rem;
-	}
-
-	.lenguages 
-	.card
-	.card_info
-	.card_name {
-		font-size: 18px;
-	}
-
-	.lenguages 
-	.card
-	.card_info
-	.porcent
-	.porcent_value {
-		font-size: 18px;
-	}
-
-	.lenguages 
-	.card
-	.card_info
-	.porcent
-	.porcent_bar {
-		width: 140px;
-		height: 10px;
-	}
-
-	.lenguages 
-	.card
-	.card_info
-	.porcent
-	.porcent_bar 
-	.porcent_progress {
-		width: 70px;
-		height: 10px;
+	.abaut 
+	.abaut_description p {
+		width: 100%;
 	}
 }
