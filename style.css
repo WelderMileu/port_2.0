@@ -87,7 +87,6 @@ body {
 	width: 276px;
 	height: 343px;
 	border-radius: 20px;
-	background-color: var(--color-black-max-clear);
 	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
 
 	display: flex;
@@ -212,6 +211,7 @@ body {
 
 @media screen and (max-width: 500px) {
 	.abaut {
+		align-items: center;
 		flex-direction: column;
 	}
 
@@ -229,5 +229,13 @@ body {
 	.abaut 
 	.abaut_description p {
 		width: 100%;
+	}
+
+	/* Card Skills  */
+
+	.lenguages 
+	.card {
+		width: 40%;
+		height: 167px;
 	}
 }
