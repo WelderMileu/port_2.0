@@ -59,12 +59,13 @@ body {
 	width: 200px;
 	height: 60px;
 	border: none;
-	border: 2px solid var(--color-blue-clear);
+	border: 1px solid var(--color-black-max-clear);
+	border-left: 3px solid var(--color-blue-clear);
+	border-right: 3px solid var(--color-blue-clear);
 	padding: 10px;
-	border-radius: 10px;
 	background-color: transparent;
 
-	color: var(--color-blue-clear);
+	color: var(--color-white);
 	font-size: 18px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
@@ -85,7 +86,7 @@ body {
 .card_description {
 	width: 276px;
 	height: 343px;
-	border-radius: 50px;
+	border-radius: 20px;
 	background-color: var(--color-black-max-clear);
 	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
 
@@ -168,14 +169,14 @@ body {
 
 .lenguages 
 .card {
-	width: 300px;
-	height: 100px;
+	width: 157px;
+	height: 167px;
 	border-radius: 20px;
-	padding: 20px;
 
 	display: flex;
-	flex-direction: row;
-	align-items: flex-end;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	margin: 10px;
 
 	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
@@ -184,8 +185,8 @@ body {
 .lenguages 
 .card
 .card_icon {
-	width: 50px;
-	height: 50px;
+	width: 65px;
+	height: 65px;
 	margin-bottom: 10px;
 	border: 3px solid var(--color-yellow);
 
@@ -198,64 +199,15 @@ body {
 .lenguages 
 .card
 .card_icon i {
-	font-size: 1.5rem;
+	font-size: 2.5rem;
 	color: var(--color-yellow);
 }
 
 .lenguages 
 .card
-.card_info {
-	margin-left: 20px;
-}
-
-.lenguages 
-.card
-.card_info
 .card_name {
 	font-size: 18px;
-	font-weight: 400;
-}
-
-.lenguages 
-.card
-.card_info
-.porcent {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-}
-
-.lenguages 
-.card
-.card_info
-.porcent
-.porcent_value {
-	font-size: 18px;
-	font-weight: 400;
-	padding-left: 10px;
-}
-
-.lenguages 
-.card
-.card_info
-.porcent
-.porcent_bar {
-	width: 140px;
-	height: 10px;
-	background-color: var(--color-black-max-clear);
-	border-radius: 100px;
-}
-
-.lenguages 
-.card
-.card_info
-.porcent
-.porcent_bar 
-.porcent_progress {
-	width: 70px;
-	height: 10px;
-	background-color: var(--color-yellow);
-	border-radius: 100px;
+	font-weight: 500;
 }
 
 @media screen and (max-width: 500px) {
