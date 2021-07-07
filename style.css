@@ -133,10 +133,8 @@ body {
 	height: 150px;
 	border-radius: 100px;
 	object-fit: cover;
-	padding: 10px;
+	padding: 2px;
 
-	border: 3px solid var(--color-blue-clear);
-	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 .abaut
@@ -235,7 +233,7 @@ body {
 .lenguages {
 	width: 40%;
 
-	margin-top: 120px;
+	margin-top: 100px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -259,6 +257,7 @@ body {
 	margin: 10px;
 
 	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+	background-color: var(--color-black-max-clear);
 }
 
 .lenguages 
@@ -279,7 +278,7 @@ body {
 .card
 .card_icon i {
 	font-size: 2.5rem;
-	color: var(--color-black-clear);
+	color: var(--color-black-max-clear) !important;
 }
 
 .lenguages 
