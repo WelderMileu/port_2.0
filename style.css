@@ -112,8 +112,7 @@ body {
 	width: 276px;
 	height: auto;
 	border-radius: 20px;
-	border: 1px solid var(--color-black-max-clear);
-
+	
 	padding-top: 40px;
 	padding-bottom: 40px;
 
@@ -251,7 +250,7 @@ body {
 	width: 157px;
 	height: 167px;
 	border-radius: 20px;
-	border: 2px solid var(--color-black-max-clear);
+	border: 1px solid var(--color-black-max-clear);
 
 	display: flex;
 	justify-content: center;
@@ -267,20 +266,20 @@ body {
 .card_icon {
 	width: 65px;
 	height: 65px;
-	border: 3px solid var(--color-yellow);
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border-radius: 100px;
 	margin-top: 14px;
+	background-color: var(--color-yellow);
 }
 
 .lenguages 
 .card
 .card_icon i {
 	font-size: 2.5rem;
-	color: var(--color-yellow);
+	color: var(--color-black-clear);
 }
 
 .lenguages 
