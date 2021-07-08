@@ -101,15 +101,21 @@
 			const abaut = document.querySelector('.abaut');
 			const container = document.querySelector('.container');
 
-			abaut.style.display = "none";
-			container.style.display = "none";
+			abaut.style.opacity = 0;
+			abaut.style.transition = "1s";
+
+			container.style.opacity = 0;
+			container.style.transition = "1s";
 
 			window.onload =  (event) => {
+				load.style.opacity = 0;
+
 				setTimeout(() => {
 					load.style.display = "none";
-					abaut.style.display = "flex";
-					container.style.display = "flex";	
-				}, 3000)
+					abaut.style.opacity = 1;
+					container.style.opacity = 1;	
+
+				}, 1000)
 				
 			}
 		</script>
