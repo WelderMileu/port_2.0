@@ -17,6 +17,23 @@
 			</div>
 		</div>
 
+		<div class="info">
+			<div>
+				<button class="close">
+					<i class="fas fa-times"></i>
+				</button>
+				<div>
+					<h3>
+						<div>
+							<i class="fas fa-info"></i> 							
+						</div>
+						Atenção
+					</h3>
+					<p>Site em Desenvolvimento.</p>		
+				</div>
+			</div>
+		</div>
+
 		<session class="abaut">
 			<div class="card_abaut">
 				<div class="card_description">
@@ -101,6 +118,10 @@
 			const abaut = document.querySelector('.abaut');
 			const container = document.querySelector('.container');
 
+			const info = document.querySelector('.info');
+
+			info.style.display = "none"
+
 			abaut.style.opacity = 0;
 			abaut.style.transition = "1s";
 
@@ -113,11 +134,22 @@
 				setTimeout(() => {
 					load.style.display = "none";
 					abaut.style.opacity = 1;
-					container.style.opacity = 1;	
-
+					container.style.opacity = 1;
 				}, 1000)
 				
 			}
+
+
+			setTimeout(() => {
+				info.style.display = "block"
+			}, 5000)
+
+
+			const close = document.querySelector('.close');
+
+			close.addEventListener('click', () => {
+				info.style.display = "none"
+			})
 		</script>
 	</body>
 </html>

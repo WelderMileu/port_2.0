@@ -128,13 +128,109 @@ body {
 	}
 }
 
+/* Card de info  */
+
+.info {
+	width: 400px;
+	height: auto;
+	padding: 15px;
+	background-color: var(--color-black-max-clear);
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: fixed;
+	top: 10%;
+	left: 50%;
+}
+
+
+.info 
+div {
+	position: relative;
+	width: 100%;
+}
+
+.info 
+div 
+button {
+	z-index: 1000;
+	position: absolute;
+	right: 0px;
+	border: none;
+	background-color: transparent;
+}
+
+.info 
+div 
+button i {
+	color: var(--color-white);
+	font-size: 1.2rem;
+}
+
+.info 
+div
+div {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-left: 20px;
+}
+
+.info 
+div 
+div h3 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	margin-top: 20px;
+}
+
+.info 
+div 
+div 
+h3 div {
+	width: 30px;
+	height: 30px;
+	background-color: var(--color-blue-clear);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 100px;
+
+	margin-right: 10px;
+	margin-left: 0;
+}
+
+.info 
+div 
+div 
+h3 div i {
+	color: var(--color-black-max-clear);	
+}
+
+.info 
+div 
+div 
+p {
+	font-weight: 400;
+	margin-top: 0;
+}
 
 /* Sobre mim */
 .abaut {
 	margin: auto 15%;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: flex-start;
 }
 
@@ -391,6 +487,12 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+	.info {
+		width: 90%;
+		left: 10px;
+		top: 15px;
+	}
+
 	.abaut {
 		margin: 10%;
 		align-items: center;
