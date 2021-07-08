@@ -28,6 +28,107 @@ body {
 	color: var(--color-white);
 }
 
+/* load da pagina  */
+
+.load {
+	width: 100%;
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	position: fixed;
+}
+
+.load 
+.cub {
+	width: 110px;
+
+	display: grid;
+	grid-gap: 10px;
+	grid-template-areas: "camp1 camp2"
+						 "camp3 camp4";
+}
+
+.load 
+.cub div {
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+	background-color: var(--color-black-max-clear);
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.load 
+.cub div:nth-child(1) {
+	animation-name: primary;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+.load 
+.cub div:nth-child(2) {
+	animation-name: secundary;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+.load 
+.cub div:nth-child(3) {
+	animation-name: tercy;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+.load 
+.cub div:nth-child(4) {
+	animation-name: quart;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes primary {
+	0% {
+		background-color: var(--color-blue-clear);
+	}
+
+	20% {
+		background-color: var(--color-black-max-clear);
+	}
+}
+
+@keyframes secundary {
+	0% {
+		background-color: var(--color-blue-clear);
+	}
+
+	40% {
+		background-color: var(--color-black-max-clear);
+	}
+}
+
+@keyframes tercy {
+	0% {
+		background-color: var(--color-blue-clear);
+	}
+
+	80% {
+		background-color: var(--color-black-max-clear);
+	}
+}
+
+@keyframes quart {
+	0% {
+		background-color: var(--color-blue-clear);
+	}
+
+	100% {
+		background-color: var(--color-black-max-clear);
+	}
+}
+
+
 /* Sobre mim */
 .abaut {
 	margin: auto 15%;

@@ -8,6 +8,15 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
+		<div class="load">
+			<div class="cub">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+
 		<session class="abaut">
 			<div class="card_abaut">
 				<div class="card_description">
@@ -87,5 +96,22 @@
 			</div>
 		</session>
 
+		<script type="text/javascript">
+			const load = document.querySelector('.load');
+			const abaut = document.querySelector('.abaut');
+			const container = document.querySelector('.container');
+
+			abaut.style.display = "none";
+			container.style.display = "none";
+
+			window.onload =  (event) => {
+				setTimeout(() => {
+					load.style.display = "none";
+					abaut.style.display = "flex";
+					container.style.display = "flex";	
+				}, 3000)
+				
+			}
+		</script>
 	</body>
 </html>
