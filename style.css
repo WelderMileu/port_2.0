@@ -325,9 +325,9 @@ p {
 .abaut
 .card_abaut
 .card_description img {
-	width: 150px;
-	height: 150px;
-	border-radius: 100px;
+	width: 230px;
+	height: 230px;
+	border-radius: 100%;
 	object-fit: cover;
 	padding: 4px;
 
