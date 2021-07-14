@@ -306,6 +306,7 @@ p {
 .abaut
 .card_abaut 
 .card_description {
+	position: relative;
 	width: 250px;
 	height: auto;
 	border-radius: 20px;
@@ -319,28 +320,28 @@ p {
 	text-align: center;
 
 	color: var(--color-white);
-	background-color: var(--color-black-max-clear);
-	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 .abaut
 .card_abaut
 .card_description img {
-	width: 100%;
-	height: 200px;
+	width: 250px;
+	height: 250px;
 	object-fit: cover;
 
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
+	border-radius: 10%;
 }
 
 .abaut
 .card_abaut
 .card_description h1 {
 	font-size: 1.5rem;
-	font-weight: 600;
+	font-weight: 800;
 	font-family: 'Poppins', sans-serif;
 	margin-bottom: 3px;
+
+	position: absolute;
+	top: 57%;
 }
 
 .abaut
@@ -351,6 +352,9 @@ p {
 	font-family: 'Poppins', sans-serif;
 	font-weight: normal;
 	padding-bottom: 20px;
+
+	position:  absolute;
+	top: 78%;
 }
 
 .abaut
