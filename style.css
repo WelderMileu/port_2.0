@@ -333,9 +333,8 @@ button i {
 .card_description {
 	position: relative;
 	width: 300px;
-	height: 400px;
+	height: auto;
 
-	background-image: url(./assets/images/avatar.jpg);
 	background-size: cover;	
 
 	border-radius: 20px;
@@ -352,17 +351,26 @@ button i {
 
 .abaut
 .card_abaut
+.card_description img {
+	width: 180px;
+	height: 180px;
+	border-radius: 100%;
+	object-fit: cover;
+
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.abaut
+.card_abaut
 .card_description
 .description_user {
-	position: absolute;
-	background-color: rgba(0, 0, 0, .5);
-	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
 	padding: 15px;
 	width: 100%;
 	color: var(--color-white);
 	border-radius: 10px;
 
 	bottom: 0;
+	margin-top: 10px;
 }
 
 .abaut
@@ -370,8 +378,8 @@ button i {
 .card_description
 .description_user h1 {
 	font-family: 'Poppins', sans-serif;
-	font-size: 1.4rem;
-	margin-bottom: 0px;
+	font-size: 1.8rem;
+	margin-bottom: 10px;
 	margin-top: 0;
 	font-weight: 900;
 }
@@ -380,9 +388,9 @@ button i {
 .card_abaut
 .card_description
 .description_user span {
-	font-size: 1rem;
+	font-size: 1.2rem;
 	margin-top: 0;
-	font-weight: 500;
+	font-weight: 300;
 	font-family: 'Poppins', sans-serif;
 }
 
@@ -392,46 +400,47 @@ button i {
 .card_abaut
 .sociais {
 	display: flex;
-	flex-direction: column;
-	margin-top: 30px;
+	flex-direction: row;
+	margin-top: 10px;
 
 	justify-content: center;
 	align-items: center;
 
 	width: auto;
-	background-color: rgba(0, 0, 0, .5);
-	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
-
 	border-radius: 10px;
 	border-top-left-radius: 0;
 	border-bottom-right-radius: 0;
-
-	position: absolute;
-
-	top: -30px;
-	right: 0px;
 }
 
 .abaut
 .card_abaut
 .sociais
 .box {
-	width: 60px;
-	height: 60px;
+	width: 70px;
+	height: 70px;
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
-	margin-left: 10px;
 }
 
 .abaut
 .card_abaut
 .sociais
 .box i {
-	font-size: 2rem;
+	font-size: 2.5rem;
 	color: var(--color-white);
+
+	transition: .3s ease-in-out;
+
+}
+
+.abaut
+.card_abaut
+.sociais
+.box i:hover {
+	transform: scale(1.5);
 }
 
 /* Minhas skills */
