@@ -247,7 +247,7 @@ button i {
 .info_container
 .info_content p {
 	font-weight: 400;
-	margin-top: 0;
+	margin-top: -10px;
 }
 
 /* Sobre mim */
@@ -261,11 +261,30 @@ button i {
 	align-items: center;
 }
 
-.abaut img {
+.abaut 
+.avatar {
+	position: relative;
+}
+
+.abaut 
+.avatar img {
 	width: 250px;
-	height: 300px;
+	height: 250px;
 	object-fit: cover;
 	border-radius: 20px;
+}
+
+.abaut
+.avatar:before {
+	content: '';
+	position: absolute;
+	width: 250px;
+	height: 250px;
+	border-radius: 20px;
+	background-color: var(--color-blue-clear);
+	top: 5px;
+	left: -5px;
+	z-index: -1;
 }
 
 .abaut
@@ -390,6 +409,83 @@ button i {
 .card_name {
 	font-size: 18px;
 	font-weight: 500;
+}
+
+
+/* Porfifolio */
+.port {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.port 
+.port-card {
+	width: 260px;
+	height: 300px;
+	border-radius: 20px;
+	overflow: hidden;
+	background-color: var(--color-black-max-clear);
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+
+	margin: 20px;
+}
+
+.port 
+.port-card img {
+	width: 100%;
+	height: 170px;
+	object-fit: cover;
+}
+
+.port 
+.port-card
+.port-content {
+	padding: 0px 0px 0px 20px;
+}
+
+.port 
+.port-card
+.port-content 
+.buttons {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+}
+
+.port 
+.port-card
+.port-content 
+.buttons a {
+	border: 1px solid var(--color-blue-clear);
+	padding: 10px 20px;
+	margin-left: 5px;
+	border-radius: 4px;
+	text-decoration: none;
+	color: var(--color-blue-clear);
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+.port 
+.port-card
+.port-content 
+.buttons a:nth-child(2) {
+	position: absolute;
+	top: -120px;
+	right: 5px;
+	font-size: 2.5rem;
+	width: 50px;
+	height: 50px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	background-color: var(--color-black-clear);
+	opacity: .8;
 }
 
 @media screen and (max-width: 500px) {
