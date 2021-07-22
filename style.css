@@ -445,7 +445,6 @@ button i {
 .port-card
 .port-content 
 .buttons a {
-	border: 1px solid var(--color-white);
 	padding: 15px 20px;
 	border-radius: 10px;
 	text-decoration: none;
@@ -456,6 +455,7 @@ button i {
 	display: flex;
 	justify-content:  center;
 	margin-top: 5px;
+	background-color: var(--color-black-max-clear);
 }
 
 .port 
@@ -463,18 +463,17 @@ button i {
 .port-content 
 .buttons a:nth-child(2) {
 	position: absolute;
-	top: -65px;
+	top: -55px;
 	right: 5px;
-	font-size: 2.5rem;
-	width: 50px;
-	height: 50px;
+	font-size: 2rem;
+	width: 40px;
+	height: 40px;
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border: none;
 	border-radius: 100px;
-	background-color: var(--color-black-clear);
 	opacity: .8;
 }
 
