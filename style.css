@@ -246,7 +246,7 @@ button i {
 .info 
 .info_container
 .info_content p {
-	font-weight: 400;
+	font-weight: 300;
 	margin-top: -10px;
 }
 
@@ -268,11 +268,13 @@ button i {
 
 .abaut 
 .avatar img {
-	width: 250px;
+	width: 280px;
 	height: 300px;
 	object-fit: cover;
-	border-radius: 20px;
+	border-radius: 100px;
 	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+
+	border: 2px solid var(--color-blue-clear);	
 }
 
 .abaut 
@@ -308,7 +310,7 @@ button i {
 .abaut_description p {
 	width: 400px;
 	font-size: 1.2rem;
-	font-weight: 400;
+	font-weight: 300;
 	margin-top: 30px;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -326,9 +328,11 @@ button i {
 	margin-top: 30px;
 	width: 200px;
 	height: 60px;
-	border: none;
+
 	border-radius: 10px;
 	background-color: var(--color-black-max-clear);
+
+	border: 2px solid var(--color-blue-clear);
 
 	color: var(--color-white);
 	font-size: 18px;
@@ -340,7 +344,7 @@ button i {
 
 .btn-primary 
 .icon {
-	margin-left: 10px;	
+	margin-left: 5px;	
 	border-radius: 100%;	
 	padding: 10px;
 
@@ -440,8 +444,9 @@ button i {
 	width: 100%;
 	height: 230px;
 	object-fit: cover;
-	border-radius: 10px;
+	border-radius: 20px;
 	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+
 }
 
 .port 
@@ -465,8 +470,8 @@ button i {
 .port-card
 .port-content 
 .buttons a {
-	padding: 15px 20px;
-	border-radius: 5px;
+	padding: 17px;
+	border-radius: 100px;
 	text-decoration: none;
 	color: var(--color-white);
 	font-size: 1rem;
@@ -477,7 +482,35 @@ button i {
 	margin-top: 5px;
 	background-color: var(--color-black-max-clear);
 
-	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.port 
+.port-card
+.port-content 
+.buttons a:nth-child(1) {
+	border-radius: 5px;
+
+	position: absolute;
+	bottom: 5px;
+
+	width: 60px;
+	height: 60px;
+
+	left: 0px;
+
+	font-size: 25px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: var(--color-black-clear);
+	
+	color: var(--color-blue-clear);
+
+	border-bottom-right-radius: 0;
+	border-top-left-radius: 0;
 }
 
 .port 
@@ -494,6 +527,15 @@ button i {
 	justify-content: center;
 	align-items: center;
 	border: none;
+
+	position: absolute;
+	top: -228px;
+	right: 10px;
+
+	opacity: .8;
+
+	background-color: var(--color-white);
+	color: var(--color-black-clear);
 }
 
 @media screen and (max-width: 500px) {
