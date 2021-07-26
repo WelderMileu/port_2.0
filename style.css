@@ -269,9 +269,9 @@ button i {
 .abaut 
 .avatar img {
 	width: 280px;
-	height: 300px;
+	height: 280px;
 	object-fit: cover;
-	border-radius: 100px;
+	border-radius: 100%;
 	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
 
 	border: 2px solid var(--color-blue-clear);	
