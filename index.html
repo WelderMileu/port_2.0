@@ -7,194 +7,106 @@
 	<title>Portifolio 2.0</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 	<link rel="stylesheet" href="style.css">
+	<script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script>
 </head>
 
 <body>
-
-	<!-- Icone de load da pagina -->
 	<div class="load">
-		<div class="cub">
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-		</div>
+		<lord-icon
+		    src="https://cdn.lordicon.com/xjovhxra.json"
+		    trigger="loop"
+		    colors="primary:#2CB1CF,secondary:#08a88a"
+		    style="width:150px;height:150px">
+		</lord-icon>
 	</div>
 
-	<!-- popup informativo da pagina -->
-	<div class="info">
-		<div class="info_container">
-			<div class="info_content">
-				<div class="info_title">
-					<div class="info_icon">
-						<i class="fas fa-info"></i>
-					</div>
-					<h3>Atenção</h3>
-				</div>
-				<p>Site em Desenvolvimento.</p>
+	<div class="page">
+		<nav class="container">
+			<div class="logo">
+				<img src="./assets/images/logo.png" alt="logo">
 			</div>
 
-			<!-- botao para fechar o popud -->
-			<button class="close">
-				<i class="fas fa-times"></i>
-			</button>
-		</div>
+			<div class="nav_menu">
+				<ul>
+					<li><a href="" class="active">Inicio</a></li>
+					<li><a href="" >Sobre</a></li>
+					<li><a href="">Contato</a></li>
+					<li><a href="">Portifolio</a></li>
+				</ul>
+			</div>
+		</nav>
+
+
+		<section class="container banner">
+			<div class="banner_content">
+				<h2>Programador Full-Stack</h2>
+				<p>Bem vindo ao meu portifolio, me chamo welder e sou full-stack Developer.</p>
+				<button class="btn-primary mt-30">
+					ver Projetos
+				</button>
+			</div>
+
+			<div class="banner_image">
+				<img src="./assets/images/image_banner.png" alt="imagem do banner">
+			</div>
+		</section>
+
+
+		<section class="container abaut">
+			<div class="avatar">
+				<img src="./assets/images/avatar.png" alt="avatar">
+			</div>
+
+			<div class="abaut_content">
+				<h2>
+					Minha History
+				</h2>
+				<p>
+					Meu nome e welder, migrei de carreira em 2017, vim da area coorporativa para o desenvolvimeto, e me adaptei muito rapdo ao mundo dos software, atualmente estou estudando ingles.
+				</p>
+				<button class="btn-primary mt-30">
+					ver Projetos
+				</button>
+			</div>
+		</section>
+
+		<section class="skills container">
+			<div class="skill_card">
+				<i class="fab fa-node-js"></i>
+				<p>Node JS</p>
+			</div>
+
+			<div class="skill_card">
+				<i class="fab fa-react"></i>
+				<p>React JS</p>
+			</div>
+
+			<div class="skill_card">
+				<i class="fab fa-css3"></i>
+				<p>CSS3</p>
+			</div>
+
+			<div class="skill_card">
+				<i class="fab fa-html5"></i>
+				<p>HTML5</p>
+			</div>
+		</section>
 	</div>
-
-	<!-- Sobre mim -->
-	<session class="abaut">
-		<div class="avatar">
-			<img src="./assets/images/avatar.jpg" alt="avatar">			
-		</div>
-		
-		<div class="abaut_description">
-			<h2>Minha Tragetoria no Desenvolvimento</h2>
-			<p>Meu nome Welder Mileu estou do mundo da tecnologia desde 2015 venho atuando como programador Full-Stack,
-				mudei do mundo corporativo para o desenvolvimento e aqui estou.</p>
-			<button class="btn-primary">
-				Ver Projetos
-				<span class="icon">
-					<i class="fas fa-caret-down"></i>
-				</span>
-			</button>
-		</div>
-	</session>
-
-	<!-- Minhas Soft-Skills -->
-	<session class="container">
-		<div class="title">
-			<h2>Hard Skills</h2>
-		</div>
-		<div class="lenguages">
-			<div class="card">
-				<div class="card_icon">
-					<i class="fab fa-figma"></i>
-				</div>
-				<p class="card_name"> Figma </p>
-			</div>
-
-			<div class="card">
-				<div class="card_icon" style="background-color: var(--color-blue);">
-					<i class="fab fa-react"></i>
-				</div>
-				<p class="card_name"> ReactJS </p>
-			</div>
-
-			<div class="card">
-				<div class="card_icon" style="background-color: var(--color-green);">
-					<i class="fab fa-node-js"></i>
-				</div>
-				<p class="card_name"> NodeJS </p>
-			</div>
-
-			<div class="card">
-				<div class="card_icon" style="background-color: var(--color-red);">
-					<i class="fab fa-html5"></i>
-				</div>
-				<p class="card_name"> HTML5 </p>
-			</div>
-
-			<div class="card">
-				<div class="card_icon" style="background-color: var(--color-blue-vanage);">
-					<i class="fab fa-css3"></i>
-				</div>
-				<p class="card_name"> CSS3 </p>
-			</div>
-
-		</div>
-	</session>
-
-	<session class="container" style="margin-top: 100px;">
-		<div class="title">
-			<h2>Portifolio</h2>
-		</div>
-		<div class="port">
-			<div class="port-card">
-				<img src="https://eletronicasantana.vteximg.com.br/arquivos/ids/56787-300-300/7tendenciasdatecnologia.jpg?v=636413306345730000" alt="image port">
-				<div class="port-content">
-					<p>Description the projects</p>
-					<div class="buttons">
-						<a href="">
-							ver projeto
-						</a>
-						<a href="">
-							<i class="fab fa-github"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="port-card">
-				<img src="https://ironsidebrasil.com.br/wp-content/uploads/2020/09/TI-1024-300x300.jpg" alt="image port">
-				<div class="port-content">
-					<p>Description the projects</p>
-					<div class="buttons">
-						<a href="">
-							ver projeto
-						</a>
-						<a href="">
-							<i class="fab fa-github"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="port-card">
-				<img src="https://vilanovaconceicaosp.com.br/wp-content/uploads/2020/01/solu%C3%A7%C3%B5es-tecnologia-invas%C3%A3o-condom%C3%ADnios-portal-vila-nova-300x300.jpg" alt="image port">
-				<div class="port-content">
-					<p>Description the projects</p>
-					<div class="buttons">
-						<a href="">
-							ver projeto
-						</a>
-						<a href="">
-							<i class="fab fa-github"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-
-
-		</div>
-	</session>
 
 	<script type="text/javascript">
 		const load = document.querySelector('.load');
-		const abaut = document.querySelector('.abaut');
-		const container = document.querySelector('.container');
+		const page = document.querySelector('.page')
 
-		const info = document.querySelector('.info');
-
-		info.style.display = "none"
-
-		abaut.style.opacity = 0;
-		abaut.style.transition = "1s";
-
-		container.style.opacity = 0;
-		container.style.transition = "1s";
+		page.style.display = 'none'
+		load.style.display = 'flex'
 
 		window.onload = (event) => {
-			load.style.opacity = 0;
-
 			setTimeout(() => {
-				load.style.display = "none";
-				abaut.style.opacity = 1;
-				container.style.opacity = 1;
-			}, 1000)
-
+				page.style.display = 'block'
+				load.style.display = 'none'
+			}, 5000)
 		}
 
-
-		setTimeout(() => {
-			info.style.display = "block"
-		}, 5000)
-
-
-		const close = document.querySelector('.close');
-
-		close.addEventListener('click', () => {
-			info.style.display = "none"
-		})
 	</script>
 </body>
 
