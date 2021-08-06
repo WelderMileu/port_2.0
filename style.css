@@ -13,6 +13,12 @@
 	--color-white: #ffffff;
 }
 
+.animate_right {
+	transition: 1s ease-in-out;
+	margin-left: -50px;
+	opacity: 0;
+}
+
 *,
 html,
 #root {
@@ -212,11 +218,11 @@ nav .nav_menu ul li a {
 
 
 .skills .skill_card i {
-	font-size: 70px;
+	font-size: 80px;
 	border-radius: 100px;
 
-	width: 100px;
-	height: 100px;
+	width: 150px;
+	height: 150px;
 
 	display: flex;
 	justify-content: center;
