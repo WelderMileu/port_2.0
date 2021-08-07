@@ -209,11 +209,21 @@ nav .nav_menu ul li a {
 }
 
 .skills .skill_card {
-	margin: 50px;
+	margin: 20px;
 	display: flex;
+
+	padding: 30px;
+
+	width: 180px;
+	height: 200px;
+	border-radius: 20px;
 
 	flex-direction: column;
 	align-items: center;
+
+	background: linear-gradient(89.65deg, #2CB1CF 4.04%, #0277BD 137.53%);
+
+	box-shadow: 2px 2px 5px rgba(0,0,0, .8);
 }
 
 
@@ -228,7 +238,6 @@ nav .nav_menu ul li a {
 	justify-content: center;
 	align-items: center;
 
-	background: linear-gradient(89.65deg, #2CB1CF 4.04%, #0277BD 137.53%);
 	margin-bottom: 0;
 }
 
