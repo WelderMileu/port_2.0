@@ -1,32 +1,50 @@
-const load = document.querySelector('.load');
-const page = document.querySelector('.page')
+const $ = e => document.querySelector(e);
 
-// Loading the page
-function load_page() {
-	page.style.display = 'none'
-	load.style.display = 'flex'
+const load_page = () => {
+	$(".page").style.display = 'none'
+	$(".load").style.display = 'flex'
 
 	setTimeout(() => {
-		page.style.display = 'block'
-		load.style.display = 'none'
+		$(".page").style.display = 'block'
+		$(".load").style.display = 'none'
 	}, 3000)
 }
 
-// animated the right
-function animate_right() {
-	const right = document.querySelectorAll('.animate_right');
-	const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4);
+const card_information = {
+	init() {
+		$('.message').style.display = "none";
+		$('.message').style.opacity = 0;
+		$('.message').style.paddingTop = "-500px";
 
-	right.forEach(anima => {
-		if ((windowTop) > anima.offsetTop) {
-			anima.style.marginLeft = "0px"
-			anima.style.opacity = 1	
-		}
-	})
+		$('.message_card').style.opacity = 0;
+		$('.message_card').style.display = "none";
+  	},
+
+  	open() {
+  		$('.message').style.opacity = 1;
+  		$('.message').style.display = "flex";
+		
+		setTimeout(() => {
+			$('.message_card').style.opacity = 1;
+			$('.message').style.paddingTop = "50px";
+			$('.message_card').style.display = "flex";
+		}, 500)
+  	},
+
+  	close() {
+		$('.message').style.paddingTop = "1000px";
+  				
+		setTimeout(() => {
+			$('.message').style.opacity = 0;
+  			$('.message').style.display = "none";	
+		}, 1000);	
+  	}
 }
 
-window.addEventListener('scroll', animate_right)
 window.onload = load_page()
+card_information.init()
+setTimeout(() => card_information.open(), 4000)
+$('.close').addEventListener('click',() =>card_information.close())
 
 
 
