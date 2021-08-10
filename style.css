@@ -102,7 +102,7 @@ nav .nav_menu ul li a {
 	justify-content: center;
 	align-items: center;
 
-	padding: 50px;
+	padding: 30px;
 
 	text-align: center;
 
@@ -129,7 +129,7 @@ nav .nav_menu ul li a {
 
 .message .message_card p {
 	margin-top: 10px;
-	width: 90%;
+	width: 100%;
 }
 
 .active {
@@ -203,6 +203,9 @@ nav .nav_menu ul li a {
 	height: 70px;
 	background: linear-gradient(89.65deg, #2CB1CF 4.04%, #0277BD 137.53%);
 
+	box-shadow: 2px 2px 5px rgba(0,0,0, .8), 
+				inset -1px -1px 5px rgba(0,0,0, .8);
+
 	border: none;
 	border-radius: 100px;
 
@@ -274,14 +277,16 @@ nav .nav_menu ul li a {
 	flex-direction: column;
 	align-items: center;
 
-	background: linear-gradient(89.65deg, #2CB1CF 4.04%, #0277BD 137.53%);
+	/*background: linear-gradient(89.65deg, #2CB1CF 4.04%, #0277BD 137.53%);*/
 
-	box-shadow: 2px 2px 5px rgba(0,0,0, .8);
+	box-shadow: 2px 2px 5px rgba(0,0,0, .8), 
+				inset -1px -1px 5px rgba(0,0,0, .8);
+
 }
 
 
 .skills .skill_card i {
-	font-size: 80px;
+	font-size: 85px;
 	border-radius: 100px;
 
 	width: 150px;
@@ -292,6 +297,7 @@ nav .nav_menu ul li a {
 	align-items: center;
 
 	margin-bottom: 0;
+	color: var(--color-blue);
 }
 
 .skills .skill_card p {

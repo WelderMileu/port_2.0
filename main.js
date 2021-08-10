@@ -11,7 +11,7 @@ const load_page = () => {
 		// animation uning the gsap
 		$('.banner_content').style.marginLeft = "-100px"
 		gsap.to('.banner_content', { 
-			duration: 1.5, 
+			duration: .5, 
 			x: 100 
 		});
 
@@ -57,12 +57,10 @@ const card_information = {
   	}
 }
 
-// $('.message').style.display = "none";
-// $(".load").style.display = 'none'
 
 window.onload = load_page()
 card_information.init()
-setTimeout(() => card_information.open(), 4000)
+setTimeout(() => card_information.open(), 6000)
 $('.close').addEventListener('click',() =>card_information.close())
 
 
