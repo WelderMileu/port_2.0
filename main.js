@@ -7,7 +7,23 @@ const load_page = () => {
 	setTimeout(() => {
 		$(".page").style.display = 'block'
 		$(".load").style.display = 'none'
-	}, 3000)
+	
+		// animation uning the gsap
+		$('.banner_content').style.marginLeft = "-100px"
+		gsap.to('.banner_content', { 
+			duration: 1.5, 
+			x: 100 
+		});
+
+		$('.banner_image').style.transform = "scale(0)"
+		gsap.to('.banner_image', { 
+			duration: 1.3,
+			ease: "elastic. out( 1, 0.3)", 
+			scale: 1, 
+			delay: 1.2 
+		});
+
+	}, 3000);
 }
 
 const card_information = {
@@ -41,10 +57,16 @@ const card_information = {
   	}
 }
 
+// $('.message').style.display = "none";
+// $(".load").style.display = 'none'
+
 window.onload = load_page()
 card_information.init()
 setTimeout(() => card_information.open(), 4000)
 $('.close').addEventListener('click',() =>card_information.close())
+
+
+
 
 
 
