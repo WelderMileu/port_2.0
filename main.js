@@ -32,6 +32,7 @@ const card_information = {
 		$('.message').style.opacity = 0;
 		$('.message').style.paddingTop = "-500px";
 
+
 		$('.message_card').style.opacity = 0;
 		$('.message_card').style.display = "none";
   	},
@@ -42,13 +43,22 @@ const card_information = {
 		
 		setTimeout(() => {
 			$('.message_card').style.opacity = 1;
-			$('.message').style.paddingTop = "50px";
+			$('.message').style.paddingTop = "100px";
 			$('.message_card').style.display = "flex";
+
+			setTimeout(() => {
+				$('.message').style.paddingTop = "50px";
+			}, 300);
+
 		}, 500)
   	},
 
   	close() {
-		$('.message').style.paddingTop = "1000px";
+  		$('.message').style.paddingTop = "10px";
+  		
+  		setTimeout(() => {
+			$('.message').style.paddingTop = "700px";
+  		}, 400);
   				
 		setTimeout(() => {
 			$('.message').style.opacity = 0;

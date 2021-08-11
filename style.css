@@ -256,7 +256,7 @@ nav .nav_menu ul li a {
 }
 
 .skills {
-	margin-top: 120px;
+	margin-top: 30px;
 
 	padding-top: 30px;
 	padding-bottom: 30px;
@@ -266,6 +266,14 @@ nav .nav_menu ul li a {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+}
+
+.title_skills {
+	margin-top: 120px;
+	margin-bottom: 0;
+
+	font-size: 64px;
+	text-align: center;
 }
 
 .skills .skill_card {
@@ -391,8 +399,16 @@ nav .nav_menu ul li a {
 	}
 
 	.skills {
-		margin-top: 60px;
+		margin-top: 30px;
 		justify-content: space-around;
+	}
+
+	.title_skills {
+		margin-top: 120px;
+		margin-bottom: 0;
+
+		font-size: 2.3rem;
+		text-align: center;
 	}
 
 	.skills .skill_card {
