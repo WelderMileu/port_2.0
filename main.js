@@ -17,7 +17,7 @@ const load_page = () => {
 
 		$('.banner_image').style.transform = "scale(0)"
 		gsap.to('.banner_image', { 
-			duration: 1.3,
+			duration: 0.5,
 			ease: "elastic. out( 1, 0.3)", 
 			scale: 1, 
 			delay: 1.2 
