@@ -92,8 +92,11 @@ nav .nav_menu ul li a {
 
 .message .message_card {
 	background-color: var(--color-black-clear);
+	box-shadow: 1px 1px 1px rgba(0,0,0, .8), 
+				inset -1px -1px 5px rgba(0,0,0, .8);
 
-	width: 500px;
+
+	width: 400px;
 	height: 500px;
 
 	border-radius: 20px;
@@ -124,7 +127,8 @@ nav .nav_menu ul li a {
 .message .message_card h3 {
 	margin-top: 50px;
 	margin-bottom: 0px;
-	font-size: 1.8rem;
+	font-size: 1.5rem;
+	text-transform: uppercase;
 }
 
 .message .message_card p {
@@ -271,7 +275,7 @@ nav .nav_menu ul li a {
 	padding: 30px;
 
 	width: 150px;
-	height: 180px;
+	height: 185px;
 	border-radius: 20px;
 
 	flex-direction: column;
@@ -279,7 +283,7 @@ nav .nav_menu ul li a {
 
 	/*background: linear-gradient(89.65deg, #2CB1CF 4.04%, #0277BD 137.53%);*/
 
-	box-shadow: 2px 2px 5px rgba(0,0,0, .8), 
+	box-shadow: 1px 1px 1px rgba(0,0,0, .8), 
 				inset -1px -1px 5px rgba(0,0,0, .8);
 
 }
@@ -387,6 +391,7 @@ nav .nav_menu ul li a {
 	}
 
 	.skills {
+		margin-top: 60px;
 		justify-content: space-around;
 	}
 
