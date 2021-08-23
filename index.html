@@ -1,153 +1,54 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portifolio 2.0</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<title>Document</title>
 	<link rel="stylesheet" href="style.css">
-	<script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script>
-	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
 </head>
-
 <body>
-	<div class="load">
-		<lord-icon
-		    src="https://cdn.lordicon.com/xjovhxra.json"
-		    trigger="loop"
-		    colors="primary:#2CB1CF,secondary:#08a88a"
-		    style="width:150px;height:150px">
-		</lord-icon>
-	</div>
+	<nav class="container">
+		<div class="logo">
+			<img src="images/logo.png" alt="">
+		</div>
 
-	<div class="page">
-		<nav class="container">
-			<div class="logo">
-				<img src="./assets/images/logo.png" alt="logo">
-			</div>
+		<div class="menu">
+			<ul>
+				<li class="active"><a href="">Inicial</a></li>
+				<li><a href="">Sobre</a></li>
+				<li><a href="">Portifolio</a></li>
+				<li><a href="">Skills</a></li>
+			</ul>
+		</div>
+	</nav>
 
-			<div class="nav_menu">
-				<ul>
-					<li><a href="" class="active">Inicio</a></li>
-					<li><a href="" >Sobre</a></li>
-					<li><a href="">Contato</a></li>
-					<li><a href="">Portifolio</a></li>
-				</ul>
-			</div>
-		</nav>
+	<section class="banner container">
+		<div class="content">
+			<h3>Developer</h3>
+			<h3>Full-Stack</h3>
+			<h3>I' am not Design</h3>
+		</div>
 
+		<div class="image">
+			<img src="images/avatar-banner.svg" alt="">
+		</div>
+	</section>
 
-		<div class="message">
-			<div class="message_card">
-				<div class="close">
-					<i class="fas fa-times-circle"></i>
-				</div>
+	<section class="abaut container">
+		<div class="image">
+			<img src="images/image-abaut.jpg" alt="">
+		</div>
+		<div class="content">
+			<span>Store range</span>
+			<h2>My History</h2>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex debitis nisi repellat, aut quos, nulla atque! Officia eum a, ut placeat obcaecati sapiente. Architecto itaque numquam nisi quasi, nesciunt.
+			</p>
 
-				<div class="icon">
-					<lord-icon
-					    src="https://cdn.lordicon.com/lupuorrc.json"
-					    trigger="loop"
-					    colors="primary:#2CB1CF,secondary:#08a88a"
-					    style="width:150px;height:150px">
-					</lord-icon>
-				</div>
-
-				<div class="message_info">
-					<h3>
-						Bem vindo
-					</h3>
-
-					<p>
-						Bem vindo ao meu portifolio,
-						este site foi construido com as tecnologias basicas.
-					</p>
-				</div>
-			</div>
-		</div>	
-
-		<section class="container banner">
-			<div class="banner_content">
-				<h2>Programador Full-Stack</h2>
-				<p>Bem vindo ao meu portifolio, me chamo welder e sou full-stack Developer.</p>
-				<button class="btn-primary mt-30">
-					ver Projetos
-				</button>
-			</div>
-
-			<div class="banner_image">
-				<img src="./assets/images/image_banner.png" alt="imagem do banner">
-			</div>
-		</section>
-
-
-		<section class="container abaut">
-			<div class="avatar">
-				<img src="./assets/images/avatar.png" alt="avatar">
-			</div>
-
-			<div class="abaut_content">
-				<h2>
-					Minha History
-				</h2>
-				<p>
-					Meu nome e welder, migrei de carreira em 2017, vim da area coorporativa para o desenvolvimeto, e me adaptei muito rapdo ao mundo dos software, atualmente estou estudando ingles.
-				</p>
-				<button class="btn-primary mt-30">
-					ver Projetos
-				</button>
-			</div>
-		</section>
-
-		<section class="container">
-			<h2 class="title_skills">Tecnologias</h2>
-			<div class="skills">
-				<div class="skill_card">
-					<i class="fab fa-node-js"></i>
-					<p>NodeJS</p>
-				</div>
-
-				<div class="skill_card">
-					<i class="fab fa-react"></i>
-					<p>ReactJS</p>
-				</div>
-
-				<div class="skill_card">
-					<i class="fab fa-python"></i>
-					<p>Python</p>
-				</div>
-
-				<div class="skill_card">
-					<i class="fab fa-docker"></i>
-					<p>Docker</p>
-				</div>
-
-				<div class="skill_card">
-					<i class="fab fa-linux"></i>
-					<p>Linux</p>
-				</div>
-
-				<div class="skill_card">
-					<i class="fab fa-figma"></i>
-					<p>Figma</p>
-				</div>
-
-				<div class="skill_card">
-					<i class="fab fa-git"></i>
-					<p>Git</p>
-				</div>
-
-				<div class="skill_card">
-					<i class="fab fa-github-alt"></i>
-					<p>GitHub</p>
-				</div>	
-			</div>
-			
-		</section>
-	</div>
-
-	<script type="text/javascript" src="main.js"></script>
+			<button class="gradient-button">
+				ver projetos
+			</button>
+		</div>
+	</section>
 </body>
-
 </html>
