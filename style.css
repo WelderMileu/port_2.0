@@ -268,4 +268,8 @@ nav .menu ul li a {
 	.portifolio .title {
 		font-size: 2.5rem;
 	}
+
+	.portifolio .content .card {
+		width: 100%;
+	}
 }
