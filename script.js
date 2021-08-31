@@ -8,6 +8,7 @@ const animatedLoad = {
 			elem.style.display = 'none';
 		});
 
+		$('.banner').style.display = 'none';
 	},
 
 	loadPage() {
@@ -15,7 +16,8 @@ const animatedLoad = {
 			container.forEach(elem => {
 				elem.style.display = 'flex';
 			});
-			
+
+			$('.banner').style.display = 'flex';
 			$('.load').style.display = 'none';
 			
 			const banner = document.querySelectorAll('.banner .content h3');
